@@ -9,6 +9,7 @@
 * 将 `commons-beanutils-1.9.2.jar`、`commons-logging-1.2.jar`、`dom4j-1.6.1.jar`、`jaxen-1.1-beta-4.jar` 导入到lib目录下。
 * 在 src 目录下创建 `*.xml` 文件（建议命名为：`applicationCntext.xml` 或 `beans.xml`），配置如：
 
+```xml
     <?xml version="1.0" encoding="UTF-8"?>
 	<beans>
 		<!-- name、class、scope(默认为singleton单例模式) -->
@@ -24,9 +25,11 @@
 		</bean>
 		......
 	</beans>
+```
 
 * 启动，如：
 
+```java
 	import cn.cuilan.main.BeanFactory;
 	import cn.cuilan.main.ClassPathXmlApplicationContext;
 	
@@ -38,7 +41,7 @@
 			// ......
 		}
 	}
-
+```
 
 ### 三、设计原理
 
