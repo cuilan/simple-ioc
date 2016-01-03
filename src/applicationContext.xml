@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean name="A" class="test.A" scope="singleton">
+		<property name="i" value="123" />
+		<property name="name" value="你好" />
+	</bean>
+	<bean name="B" class="test.B" scope="prototype">
+		<property name="a" ref="A" />
+	</bean>
+	<bean name="C" class="test.C" scope="prototype">
+		<property name="b" ref="B" />
+	</bean>
+</beans>
