@@ -30,8 +30,8 @@
 * 启动，如：
 
 ```java
-	import cn.cuilan.main.BeanFactory;
-	import cn.cuilan.main.ClassPathXmlApplicationContext;
+	import cn.cuilan.beans.factory.BeanFactory;
+	import cn.cuilan.ClassPathXmlApplicationContext;
 	
 	public class Test {
 		public static void main(String[] args) {
