@@ -36,6 +36,11 @@ public class Bean {
      */
     private List<Property> properties = new ArrayList<>();
 
+    /**
+     * bean节点元素的constructor-arg属性
+     */
+    private List<ConstructorArg> constructorArgs = new ArrayList<>();
+
     public String getId() {
         return id;
     }
@@ -76,4 +81,11 @@ public class Bean {
         this.properties = properties;
     }
 
+    public List<ConstructorArg> getConstructorArgs() {
+        return constructorArgs;
+    }
+
+    public void setConstructorArgs(List<ConstructorArg> constructorArgs) {
+        this.constructorArgs = constructorArgs;
+    }
 }

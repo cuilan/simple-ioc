@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans>
+
+<!-- byType/byName -->
+<beans default-autowire="byType">
+
     <bean id="indexDao" name="indexDao" class="cn.cuilan.dao.IndexDaoImpl" scope="singleton"/>
 
     <bean id="indexService" name="indexService" class="cn.cuilan.service.IndexService" scope="prototype">
+        <!-- by setter method -->
         <property name="indexDao" ref="indexDao"/>
+
+        <!-- by constructor arguments -->
+        <constructor-arg name="" value="" ref=""></constructor-arg>
     </bean>
+
 </beans>
