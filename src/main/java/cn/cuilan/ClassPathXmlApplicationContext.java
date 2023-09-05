@@ -16,20 +16,19 @@ import cn.cuilan.utils.BeanUtils;
  * classpath XML文件定义的应用上下文容器
  *
  * @author zhang.yan
- * @date 2020/8/16
+ * @since 2020/8/16
  */
 public class ClassPathXmlApplicationContext implements BeanFactory {
-
 
     /**
      * 配置信息对象
      */
-    private Map<String, Bean> config;
+    private final Map<String, Bean> config;
 
     /**
      * 使用一个Map来做Spring的容器，放置Spring所管理的对象
      */
-    private Map<String, Object> context = new HashMap<>();
+    private final Map<String, Object> context = new HashMap<>();
 
     /**
      * 1、读取配置文件获得需要初始化的Bean的信息<br>

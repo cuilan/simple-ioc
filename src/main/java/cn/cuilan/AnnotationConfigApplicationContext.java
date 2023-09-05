@@ -11,11 +11,11 @@ import java.util.Map;
 
 /**
  * @author zhang.yan
- * @date 2020/8/16
+ * @since 2020/8/16
  */
 public class AnnotationConfigApplicationContext implements BeanFactory {
 
-    private Map<String, Object> beans = new HashMap<>();
+    private final Map<String, Object> beans = new HashMap<>();
 
     public void scan(String... basePackages) {
         for (String basePackage : basePackages) {

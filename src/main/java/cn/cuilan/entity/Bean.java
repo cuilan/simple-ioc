@@ -7,7 +7,7 @@ import java.util.List;
  * applicationContext.xml配置文件中的Bean对象
  *
  * @author zhang.yan
- * @date 2020/8/16
+ * @since 2020/8/16
  */
 public class Bean {
 

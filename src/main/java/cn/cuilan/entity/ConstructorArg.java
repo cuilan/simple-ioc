@@ -4,7 +4,7 @@ package cn.cuilan.entity;
  * 构造注入参数
  *
  * @author zhang.yan
- * @date 2020/8/16
+ * @since 2020/8/16
  */
 public class ConstructorArg {
 

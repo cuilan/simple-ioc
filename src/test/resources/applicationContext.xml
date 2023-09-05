@@ -10,7 +10,7 @@
         <property name="indexDao" ref="indexDao"/>
 
         <!-- by constructor arguments -->
-        <constructor-arg name="" value="" ref=""></constructor-arg>
+        <constructor-arg name="" value="" ref=""/>
     </bean>
 
 </beans>

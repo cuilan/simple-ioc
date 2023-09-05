@@ -4,7 +4,7 @@ import cn.cuilan.annotation.Component;
 
 /**
  * @author zhang.yan
- * @date 2020/8/16
+ * @since 2020/8/16
  */
 @Component("indexDao")
 public class IndexDaoImpl implements IndexDao {

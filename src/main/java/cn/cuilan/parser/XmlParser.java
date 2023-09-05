@@ -8,16 +8,18 @@ import java.util.Map;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
+import org.dom4j.Node;
 import org.dom4j.io.SAXReader;
 
 import cn.cuilan.entity.Bean;
 import cn.cuilan.entity.Property;
+import org.dom4j.tree.DefaultElement;
 
 /**
  * XML配置文件解析类
  *
  * @author zhang.yan
- * @date 2020/8/16
+ * @since 2020/8/16
  */
 public class XmlParser {
 
@@ -27,7 +29,6 @@ public class XmlParser {
      * @param path 配置文件的路径
      * @return 返回一个Map集合，使用键值对的方式进行存储。
      */
-    @SuppressWarnings("unchecked")
     public static Map<String, Bean> parser(String path) {
         // 创建一个用户返回的Map对象
         Map<String, Bean> map = new HashMap<>();
@@ -45,9 +46,10 @@ public class XmlParser {
 
         // "//"代表从全文寻找bean的元素
         String xpath = "//bean";
-        List<Element> beanList = document.selectNodes(xpath);
+        List<Node> beanList = document.selectNodes(xpath);
         if (beanList != null) {
-            for (Element beanElement : beanList) {
+            for (Node beanNode : beanList) {
+                DefaultElement beanElement = (DefaultElement) beanNode;
                 Bean bean = new Bean();
                 // 将bean的name、class等属性封装到Bean对象中
                 String id = beanElement.attributeValue("id");

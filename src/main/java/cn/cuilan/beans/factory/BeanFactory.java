@@ -4,7 +4,7 @@ package cn.cuilan.beans.factory;
  * BeanFactory
  *
  * @author zhang.yan
- * @date 2020/08-15
+ * @since 2020/08-15
  */
 public interface BeanFactory {
 

@@ -4,7 +4,7 @@ package cn.cuilan.entity;
  * property节点对象，包含name、value、ref三个属性。
  *
  * @author zhang.yan
- * @date 2020/8/16
+ * @since 2020/8/16
  */
 public class Property {
 
